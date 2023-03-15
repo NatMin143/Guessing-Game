@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--   Font   -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!--   Box Icons   -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>Guess Game</title>
+</head>
+
+<body>
+    <section>
+        <div class="title">
+            <h1>Guess the Number from 1-30 !!</h1>
+        </div>
+        <div class="question_mark">
+            <span>?</span>
+        </div>
+
+        <div class="guess_main">
+            <div class="guess_left">
+                <div class="input_guess">
+                    <input id="inputNumber" type="number" />
+                </div>
+                <div class="guess_update">
+                    <p id="update">Good Luck !</p>
+                </div>
+            </div>
+
+            <div class="score_newGame">
+                <div class="score">
+                    <p>Score: <span id="currentScore">10</span></p>
+                    <p>HighScore: <span class="userHighScore">0</span></p>
+                </div>
+                <div class="new_check">
+                    <button id="check">Check Guess</button>
+                    <button id="newGame">New Game?</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
